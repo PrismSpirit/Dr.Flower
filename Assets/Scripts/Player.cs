@@ -69,6 +69,13 @@ public class Player : MonoBehaviour
             collision.gameObject.SetActive(false);
             manager.GetItem(flowerCount);
         }
+        else if (collision.gameObject.tag == "Flower2")
+        {
+            flowerCount++;
+            flowerCount++;
+            collision.gameObject.SetActive(false);
+            manager.GetItem(flowerCount);
+        }
         else if (collision.gameObject.tag == "Finish")
         {
             clearSet.SetActive(true);
